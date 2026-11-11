@@ -1,0 +1,69 @@
+{
+  "dataset": "procedurally generated illustrative citrus images",
+  "samples_total": 270,
+  "train_samples": 202,
+  "test_samples": 68,
+  "test_accuracy": 0.8382352941176471,
+  "classes": [
+    "grade_a",
+    "grade_b",
+    "reject"
+  ],
+  "confusion_matrix": [
+    [
+      22,
+      0,
+      0
+    ],
+    [
+      2,
+      16,
+      5
+    ],
+    [
+      0,
+      4,
+      19
+    ]
+  ],
+  "classification_report": {
+    "grade_a": {
+      "precision": 0.9166666666666666,
+      "recall": 1.0,
+      "f1-score": 0.9565217391304348,
+      "support": 22.0
+    },
+    "grade_b": {
+      "precision": 0.8,
+      "recall": 0.6956521739130435,
+      "f1-score": 0.7441860465116279,
+      "support": 23.0
+    },
+    "reject": {
+      "precision": 0.7916666666666666,
+      "recall": 0.8260869565217391,
+      "f1-score": 0.8085106382978723,
+      "support": 23.0
+    },
+    "accuracy": 0.8382352941176471,
+    "macro avg": {
+      "precision": 0.8361111111111111,
+      "recall": 0.8405797101449276,
+      "f1-score": 0.8364061413133116,
+      "support": 68.0
+    },
+    "weighted avg": {
+      "precision": 0.8349264705882352,
+      "recall": 0.8382352941176471,
+      "f1-score": 0.8346397354630598,
+      "support": 68.0
+    }
+  },
+  "limitations": [
+    "synthetic-only evaluation",
+    "no DEM",
+    "no photorealistic renderer",
+    "no real camera or fruit validation",
+    "no robot controller integration"
+  ]
+}
