@@ -1,0 +1,29 @@
+{
+  "model": "Augmented CitrusCNN",
+  "samples_total": 1500,
+  "test_samples": 375,
+  "test_accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      125,
+      0,
+      0
+    ],
+    [
+      0,
+      125,
+      0
+    ],
+    [
+      0,
+      0,
+      125
+    ]
+  ],
+  "seed": 42,
+  "epochs": 25,
+  "limitations": [
+    "Synthetic-only test data",
+    "No independent real-fruit validation"
+  ]
+}
