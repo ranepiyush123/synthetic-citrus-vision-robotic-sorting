@@ -1,0 +1,148 @@
+{
+  "model": "PyTorch CitrusCNN",
+  "dataset": "procedurally generated synthetic citrus",
+  "samples_total": 270,
+  "train_samples": 202,
+  "test_samples": 68,
+  "seed": 42,
+  "epochs": 15,
+  "test_accuracy": 0.8235294117647058,
+  "classes": [
+    "grade_a",
+    "grade_b",
+    "reject"
+  ],
+  "confusion_matrix": [
+    [
+      22,
+      0,
+      0
+    ],
+    [
+      11,
+      12,
+      0
+    ],
+    [
+      0,
+      1,
+      22
+    ]
+  ],
+  "classification_report": {
+    "grade_a": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 22.0
+    },
+    "grade_b": {
+      "precision": 0.9230769230769231,
+      "recall": 0.5217391304347826,
+      "f1-score": 0.6666666666666666,
+      "support": 23.0
+    },
+    "reject": {
+      "precision": 1.0,
+      "recall": 0.9565217391304348,
+      "f1-score": 0.9777777777777777,
+      "support": 23.0
+    },
+    "accuracy": 0.8235294117647058,
+    "macro avg": {
+      "precision": 0.8632478632478633,
+      "recall": 0.8260869565217392,
+      "f1-score": 0.8148148148148149,
+      "support": 68.0
+    },
+    "weighted avg": {
+      "precision": 0.8661387631975868,
+      "recall": 0.8235294117647058,
+      "f1-score": 0.8150326797385621,
+      "support": 68.0
+    }
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.1059152796716973,
+      "train_accuracy": 0.2722772277227723
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.09995434543874,
+      "train_accuracy": 0.3712871287128713
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.098367962506738,
+      "train_accuracy": 0.3613861386138614
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.0976105043203523,
+      "train_accuracy": 0.4207920792079208
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.0947989367022373,
+      "train_accuracy": 0.594059405940594
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.0912784444223536,
+      "train_accuracy": 0.5198019801980198
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.080132535188505,
+      "train_accuracy": 0.5099009900990099
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.04997457608138,
+      "train_accuracy": 0.599009900990099
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.969886038563039,
+      "train_accuracy": 0.6435643564356436
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.8181882913749997,
+      "train_accuracy": 0.6881188118811881
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.6989624877967456,
+      "train_accuracy": 0.6732673267326733
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6137389581982452,
+      "train_accuracy": 0.7128712871287128
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.5063249091110608,
+      "train_accuracy": 0.7920792079207921
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.4056377903659745,
+      "train_accuracy": 0.8910891089108911
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.3890490133573513,
+      "train_accuracy": 0.8415841584158416
+    }
+  ],
+  "limitations": [
+    "Synthetic-only evaluation",
+    "No independent real-fruit dataset",
+    "No DEM simulation",
+    "No real robot integration"
+  ]
+}
