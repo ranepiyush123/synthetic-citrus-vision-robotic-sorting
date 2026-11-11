@@ -1,0 +1,164 @@
+{
+  "model": "CitrusCNN",
+  "evaluation": "Synthetic image disturbance robustness",
+  "classes": [
+    "grade_a",
+    "grade_b",
+    "reject"
+  ],
+  "seed": 2027,
+  "results": {
+    "clean": {
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          0,
+          0,
+          100
+        ]
+      ],
+      "samples": 300
+    },
+    "dark": {
+      "accuracy": 0.3333333333333333,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          100
+        ],
+        [
+          0,
+          0,
+          100
+        ],
+        [
+          0,
+          0,
+          100
+        ]
+      ],
+      "samples": 300
+    },
+    "bright": {
+      "accuracy": 0.9766666666666667,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          0,
+          7,
+          93
+        ]
+      ],
+      "samples": 300
+    },
+    "blur": {
+      "accuracy": 0.9766666666666667,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          6,
+          94,
+          0
+        ],
+        [
+          0,
+          1,
+          99
+        ]
+      ],
+      "samples": 300
+    },
+    "noise": {
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          0,
+          0,
+          100
+        ]
+      ],
+      "samples": 300
+    },
+    "colour": {
+      "accuracy": 0.37666666666666665,
+      "confusion_matrix": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          0,
+          13,
+          87
+        ],
+        [
+          0,
+          0,
+          100
+        ]
+      ],
+      "samples": 300
+    },
+    "combined": {
+      "accuracy": 0.3333333333333333,
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          94
+        ],
+        [
+          0,
+          0,
+          100
+        ],
+        [
+          0,
+          0,
+          100
+        ]
+      ],
+      "samples": 300
+    }
+  },
+  "limitations": [
+    "Synthetic imagery only",
+    "Image disturbances do not represent all real-world conditions",
+    "No real camera validation"
+  ]
+}
